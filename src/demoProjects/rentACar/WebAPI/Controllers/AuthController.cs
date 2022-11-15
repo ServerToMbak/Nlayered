@@ -22,7 +22,7 @@ namespace WebAPI.Controllers
 
             RegisteredDto result = await Mediator.Send(registerCommand);
             setRefreshTokenToCookies(result.RefreshToken);
-            return Created  ("",result);
+            return Created  ("",result.AccessToken);
         }
 
         private void setRefreshTokenToCookies(RefreshToken refreshToken)
