@@ -26,7 +26,6 @@ namespace Application.Features.Auths.Commands.Register
             private readonly AuthBusinessRules _aythBusinessRules;
             private readonly IUserRepository _userRepository;
             private readonly IAuthService _authService;
-
             public RegisterCommandHandler(AuthBusinessRules aythBusinessRules, IUserRepository userRepository, IAuthService authService)
             {
                 _aythBusinessRules = aythBusinessRules;
